@@ -16,9 +16,17 @@
 
                 <div class="panel-o">
 
-                    <div class="head">
-                        <i class="fa fa-pencil"></i>
-                        Modificar mis datos de usuario
+                    <div class="head cont-flex fx-center">
+
+                        <div class="col-1">
+                            <i class="fa fa-pencil"></i>
+                            Modificar mis datos de usuario
+                        </div>
+
+                        <div class="col-1 text-right">
+                            @include('user.public.partials.btn_show')
+                        </div>
+
                     </div>
 
 

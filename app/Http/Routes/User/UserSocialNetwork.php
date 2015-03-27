@@ -1,3 +1,3 @@
 <?php
 
-Route::resource('user/social', 'User\UserSocialNetworkController', ['only' => ['create', 'store', 'destroy']]);
+Route::resource('user/social', 'UserSocialNetworkController', ['only' => ['create', 'store', 'destroy']]);

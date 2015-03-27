@@ -1,3 +1,3 @@
 <?php
 
-Route::resource('profile', 'User\ProfileController', ['except' => ['index', 'show', 'destroy']]);
+Route::resource('profile', 'ProfileController', ['except' => ['index', 'show', 'destroy']]);
