@@ -1,0 +1,81 @@
+.carousel-min
+  background darken(color-clear, 1%)
+  border 1px solid color-line-clear
+  border-radius 4px
+  box-shadow 0 0 1px 0 rgba(color-dark, .2)
+  margin 0
+  .cover
+    padding padding-regular padding-regular*4 padding-regular*2
+    .image
+      float left
+      margin-right margin-regular
+      width 10%
+      img
+        border-radius 50%
+        height auto
+        width 100%
+    .description
+      padding padding-min padding-regular
+  .slick-prev
+  .slick-next
+    &:before
+      color darken(color-principal, 40%)
+  .slick-prev
+    left 10px
+  .slick-next
+    right 10px
+  .slick-dots
+    position absolute
+    bottom 0
+    margin 0 0 margin-min
+    li
+      button
+        &:before
+          color  color-principal
+    .slick-active
+      button
+        &:before
+          color color-principal
+
+
+.carousel-full
+  background color-dark
+  margin 0
+  .cover
+    .image
+      img
+        height auto
+        width 100%
+    .description
+      gradientLinear(transparent, color-dark)
+      bottom 0
+      color color-clear
+      padding 3em 0
+      position absolute
+      text-align center
+      width 100%
+      .subtitle
+        color color-principal
+        font-size 1.25em
+        font-weight bold
+      .title
+        font-family Anton
+        font-size 3em
+        font-weight bolder
+        letter-spacing 3px
+        margin .25em 0
+        text-transform uppercase
+      .text
+        font-size 1.125em
+  .slick-dots
+    position absolute
+    bottom 0
+    margin 0 0 margin-min
+    li
+      button
+        &:before
+          color  color-principal
+    .slick-active
+      button
+        &:before
+          color color-principal

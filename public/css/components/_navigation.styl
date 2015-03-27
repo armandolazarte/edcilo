@@ -1,0 +1,268 @@
+angle-down()
+  &:after
+    content '\f107'
+    display inline-block
+    font-family FontAwesome
+    font-weight bolder
+    margin-left margin-min
+
+.nav-0
+  background-color transparent
+  ul
+    delisting()
+    li
+      display inline-block
+      font-weight bold
+      margin 0
+      a
+      span
+        border-bottom 1px solid transparent
+        color color-text-dark
+        cursor pointer
+        display block
+        padding .5em 1.25em
+        text-decoration none
+        transition all .15s ease-in-out
+        &:focus
+        &:hover
+          border-bottom-color color-principal
+          color color-principal
+        &:active
+          border-bottom-color darken(color-principal, 30%)
+        &.trigger-dropdown
+          angle-down()
+      ul.dropdown-menu
+        border-color color-neutral
+        margin-top 2px
+        li
+          width 100%
+          a
+          span
+            color color-text-dark
+            border-bottom 0 solid transparent
+            padding padding-min
+    .active
+      a
+      span
+        color color-principal
+    .disabled
+      a
+      span
+        color color-text-neutral
+        cursor no-drop
+        &:focus
+        &:hover
+          color color-text-neutral
+          border-bottom-color transparent
+
+.nav-1
+  background-color transparent
+  ul
+    delisting()
+    li
+      display inline-block
+      font-weight bold
+      a
+      span
+        border-bottom 4px solid transparent
+        color color-text-dark
+        cursor pointer
+        display block
+        background-color transparent
+        padding .75em 1.25em
+        text-decoration none
+        transition all .15s ease-in-out
+        &:hover
+        &:focus
+          border-bottom-color color-principal
+          color color-principal
+        &.trigger-dropdown
+          angle-down()
+      ul.dropdown-menu
+        border-color color-neutral
+        margin-top 2px
+        li
+          width 100%
+          a
+          span
+            color color-text-dark
+            border-bottom 0 solid transparent
+            padding padding-min
+    .active
+      a
+      span
+        border-bottom 4px solid color-principal
+    .disabled
+      a
+      span
+        color color-text-neutral
+        cursor no-drop
+        &:focus
+        &:hover
+          border-bottom-color transparent
+
+.nav-2
+  background-color transparent
+  ul
+    delisting()
+    li
+      display inline-block
+      font-weight bold
+      margin 0 .5em 0 0
+      a
+      span
+        background-color lighten(color-principal, 20%)
+        border 1px solid transparent
+        border-radius 4px
+        color color-text-clear
+        cursor pointer
+        display block
+        padding .5em 1em
+        text-shadow 0 1px 0 rgba(color-text-dark, .4)
+        transition: all .05s ease-in-out
+        &:hover
+        &:focus
+          background-color color-principal
+          text-decoration none
+        &:active
+          box-shadow 0 0 8px 0 rgba(color-dark, .6) inset
+          text-shadow none
+        &.trigger-dropdown
+          angle-down()
+      ul.dropdown-menu
+        border-color color-neutral
+        margin-top 2px
+        li
+          width 100%
+          a
+          span
+            background transparent
+            border-radius 0
+            color color-text-dark
+            padding padding-min
+            text-shadow none
+            &:hover
+              background rgba(color-principal, .3);
+    .active
+      a
+      span
+        background-color color-principal
+        border-color darken(color-principal, 20%)
+    .disabled
+      a
+      span
+        &:hover
+        &:focus
+        &:active
+          background-color lighten(color-principal, 20%)
+          cursor no-drop
+          box-shadow none
+          text-shadow 0 1px 0 rgba(color-text-dark, .4)
+.nav-3
+  background transparent
+  ul
+    delisting()
+    li
+      display inline-block
+      &:first-child
+        a
+        span
+          margin-left margin-regular
+          &:before
+            content ''
+            float left
+            margin 0
+      a
+      span
+        display block
+        color color-dark
+        cursor pointer
+        padding padding-min 0
+        text-decoration none
+        transition all .1s ease-in-out
+        &:before
+          content "\f105"
+          font-family FontAwesome
+          color color-neutral
+          font-weight bold
+          margin 0 margin-regular
+          opacity .6
+        &:focus
+        &:hover
+          color color-principal
+        &.trigger-dropdown
+          angle-down()
+      ul.dropdown-menu
+        border-color color-neutral
+        li
+          width 100%
+          a
+          span
+            margin-left 0
+            padding padding-min
+            &:before
+              content ''
+              margin 0
+            &:hover
+              color color-text-dark
+    .active
+      a
+      span
+        color color-principal
+        font-weight bold
+    .disabled
+      a
+      span
+        color color-neutral
+        &:hover
+        &:focus
+        &:active
+          color color-neutral
+          cursor no-drop
+
+.nav-4
+  background transparent
+  ul
+    delisting()
+    box-shadow 0 -1px 0 0 color-neutral inset
+    li
+      display inline-block
+      margin 0 margin-min
+      &:first-child
+        margin-left 0
+      &:hover
+        box-shadow 0 -1px 0 0 darken(color-principal, 40%) inset
+      a
+      span
+        display block
+        color color-dark
+        cursor pointer
+        padding padding-regular padding-min
+        text-decoration none
+        transition all .1s ease-in-out
+        &.trigger-dropdown
+          angle-down()
+      ul.dropdown-menu
+        border-radius 0 0 radius-min radius-min
+        border-color color-neutral
+        box-shadow none
+        margin-top -1px
+        li
+          margin 0
+          width 100%
+          &:hover
+            box-shadow none
+    .active
+      a
+      span
+        color color-principal
+        font-weight bold
+    .disabled
+      a
+      span
+        color color-neutral
+        &:hover
+        &:focus
+        &:active
+          color color-neutral
+          cursor no-drop

@@ -1,0 +1,199 @@
+.pagination
+.pagination-1
+  delisting()
+  display flex
+  flex-flow row
+  justify-content center
+  margin 1em 0
+  li
+    box-shadow 0 0 2px 0 rgba(color-principal, .3)
+    margin 0 .25em
+  a
+  span
+    background-color color-clear
+    border 1px solid color-line
+    border-radius 3px
+    display block
+    font-weight bold
+    outline none
+    padding .5em .75em
+    text-decoration none
+  a
+    color color-principal
+    &:hover
+      background-color color-principal
+      border-color darken(color-principal, 30%)
+      color color-text-clear
+  .active
+  .disabled
+    cursor default
+  .active
+    span
+      background-color lighten(color-principal, 30%)
+      border-color color-principal
+      color color-text-clear
+  .disabled
+    span
+      color color-text-neutral
+      border-color color-line-clear
+
+.pagination-2
+  delisting()
+  display flex
+  flex-flow row
+  justify-content center
+  margin 1em 0
+  li
+    margin 0 .25em
+  a
+  span
+    background-color color-clear
+    border 1px solid color-line
+    border-radius 100%
+    box-shadow 0 0 2px 0 rgba(color-principal, .3)
+    display block
+    font-family arial, serif
+    font-weight bold
+    outline none
+    padding .25em
+    text-align center
+    text-decoration none
+    min-width 29px
+  a
+    color color-principal
+    &:focus
+    &:hover
+      background-color color-principal
+      border-color darken(color-principal, 30%)
+      color color-text-clear
+  .active
+  .disabled
+    cursor default
+  .active
+    span
+      background-color lighten(color-principal, 30%)
+      border-color color-principal
+      color color-text-clear
+  .disabled
+    span
+      color color-text-neutral
+      border-color color-line-clear
+
+.pagination-3
+  delisting()
+  display flex
+  flex-flow row
+  justify-content center
+  margin 1em 0
+  li
+    background-color color-neutral
+    padding .5em
+    &:first-child
+      border-radius 4px 0 0 4px
+    &:last-child
+      border-radius 0 4px 4px 0
+    a
+    span
+      background-color color-clear
+      border-radius 2px
+      display block
+      font-weight bold
+      outline none
+      padding .25em .625em
+      text-decoration none
+    a
+      color color-principal
+      &:focus
+      &:hover
+        background-color color-principal
+        border-color darken(color-principal, 30%)
+        color color-text-clear
+  .active
+  .disabled
+    cursor default
+  .active
+    span
+      background-color lighten(color-principal, 30%)
+      border-color color-principal
+      color color-text-clear
+  .disabled
+    span
+      color color-text-neutral
+      border-color color-line-clear
+
+.pagination-4
+  delisting()
+  display flex
+  flex-flow row
+  justify-content center
+  margin 1em 0
+  li
+    margin 0 .25em
+    a
+    span
+      background-color lighten(color-principal, 25%)
+      border 1px solid transparent
+      display block
+      font-weight bold
+      outline none
+      padding .5em .75em
+      text-decoration none
+    a
+      color color-text-clear
+      &:focus
+      &:hover
+        background-color color-principal
+        border-color darken(color-principal, 10%)
+        color color-text-clear
+  .active
+  .disabled
+    color color-text-clear
+    cursor default
+  .active
+    span
+      background-color color-principal
+      border-color color-principal
+      box-shadow 0 0 2px 0 rgba(color-principal, .6)
+  .disabled
+    span
+      background-color lighten(color-principal, 50%)
+
+.pagination-5
+  delisting()
+  display flex
+  flex-flow row
+  justify-content center
+  margin 1.5em 0
+  li
+    a
+    span
+      background-color lighten(color-principal, 25%)
+      border 1px solid transparent
+      font-weight bold
+      outline none
+      padding .75em 1em
+      text-decoration none
+    a
+      color color-text-clear
+      &:focus
+      &:hover
+        background-color color-principal
+        border-color darken(color-principal, 10%)
+        color color-text-clear
+  .active
+  .disabled
+    color color-text-clear
+    cursor default
+  .active
+    span
+      background-color color-principal
+      border-color color-principal
+  .disabled
+    span
+      background-color lighten(color-principal, 50%)
+  li:first-child > a
+  li:first-child > span
+    border-radius 4px 0 0 4px
+  li:last-child > a
+  li:last-child > span
+    border-radius 0 4px 4px 0

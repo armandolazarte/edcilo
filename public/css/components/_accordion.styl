@@ -1,0 +1,85 @@
+dl.accordion
+  dd
+    margin 0
+    margin-bottom margin-min
+    padding padding-min
+
+  dt.active
+  dt
+    background color-clear
+    border-radius 3px
+    //box-shadow 0 2px 2px 0 rgba(color-dark, 10%)
+    cursor pointer
+    position relative
+    padding padding-min
+    padding-right 35px
+    margin-bottom margin-min
+    min-height 35px
+
+    &:after
+      content "\f055"
+      color color-neutral
+      font-family FontAwesome
+      font-size 1.5em
+      height auto
+      line-height 1
+      margin margin-min
+      position absolute
+      right 0
+      top 0
+      width auto
+
+    a
+      text-decoration none
+
+  dt.active
+    &:after
+      content "\f056"
+
+
+
+.box-tab
+  margin-bottom margin-regular
+  ul.nav
+    background color-neutral
+    border-radius radius-min radius-min 0 0
+    list-style none
+    margin 0
+    min-height 35px
+    overflow hidden
+    padding 0
+    &.left
+      li
+        float right
+    li
+      border-color transparent
+      border-style solid
+      border-width 1px 1px 0 1px
+      float left
+      &:first-child
+        border-radius radius-min 0 0 0
+      a
+        color color-text-clear
+        display block
+        padding padding-min padding-regular
+        text-decoration none
+    li.active
+      background color-clear
+      border-color color-neutral
+      border-radius radius-min radius-min 0 0
+      a
+        color color-text-dark
+  .tab-content
+    background color-clear
+    border-color color-neutral
+    border-radius 0 0 radius-min radius-min
+    border-style solid
+    border-width 0 1px 0 1px
+    .tab-pane
+      border-bottom 1px solid color-neutral
+      border-radius 0 0 radius-min radius-min
+      //box-shadow 0 2px 2px 0 rgba(color-dark, 10%)
+      display none
+      padding padding-regular
+      &.active
+        display block

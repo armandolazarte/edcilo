@@ -1,0 +1,49 @@
+dl
+  dt
+    font-weight bold
+  dd
+    margin-bottom margin-min
+
+.leaders
+  delisting()
+  li
+    background url(images/bg-leaders.png) transparent 0 17px repeat-x
+    line-height 1.6em
+    margin-bottom margin-min
+    &:last-child
+      margin-bottom 0;
+    span
+      background color-clear
+      &:first-child
+        padding-right padding-min
+      &:last-child
+        float right
+        padding-left padding-min
+
+.list-block
+  delisting()
+  li
+    padding 0 .25rem .5rem
+    &:last-child
+      padding-bottom 0
+
+.sidebar
+  padding padding-regular
+  ul
+    delisting()
+    li
+      font-weight 600
+      padding 0 0 padding-min
+      margin margin-regular 0 0
+      ul
+        border-top 1px dashed grayClouds
+        display block
+        margin margin-min 0 0
+        padding padding-min 0 0
+        li
+          display list-item
+          font-size font-size-regular
+          font-weight normal
+          line-height 1.5
+          margin 0
+          padding 0

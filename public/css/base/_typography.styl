@@ -1,0 +1,139 @@
+/* ------------------ *\
+    Typography rules
+\* ------------------ */
+
+h1
+h2
+h3
+h4
+h5
+h6
+  font-family "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight 400
+  line-height 1.1
+
+h1
+  font-size 2.25em
+  margin 0 0 .75em
+h2
+  font-size 1.75em
+  margin .8em 0 1.075em
+h3
+  font-size 1.5em
+  margin 1.1em 0 1.275em
+h4
+  font-size 1.375em
+  margin 1.35em 0 1.375em
+h5
+  font-size 1.25em
+  margin 1.575em 0 1.475em
+h6
+  font-size 1.125em
+  margin 1.775em 0 1.75em
+
+p
+  margin 0 0 margin-regular
+
+mark
+  background lighten(color-alert, 60%)
+  padding padding-tiny
+
+cite
+  display block
+  float left
+  font-size 1.25em
+  font-weight bolder
+  padding 4px 14px 0 0
+  width 55%
+  &:before
+    content '\f10d'
+    font normal normal normal 18px/1 FontAwesome
+    color color-neutral
+    float left
+    font-style normal
+    line-height 1
+    padding 3px 6px 0 0
+
+blockquote
+  margin 0
+  padding 1em
+  p
+    margin 0
+  small
+    color lighten(color-dark, 45%)
+    &:before
+      content '\2014\00A0'
+  &:before
+    content '\f10d'
+    font normal normal normal 30px/1 FontAwesome
+    color color-neutral
+    float left
+    font-style normal
+    line-height 1
+    padding 6px 6px 2px 0
+
+
+.text-lowercase
+  text-transform lowercase
+.text-uppercase
+  text-transform uppercase
+.text-capitalize
+  text-transform capitalize
+
+.text-small-meta
+  font-size 90%
+  color rgba(color-text-dark, .8)
+.text-small
+  font-size 90%
+.text-regular
+  font-size 100%
+.text-middle
+  font-size 150%
+.text-big
+  font-size 200%
+
+.text-muted
+  color color-neutral
+.text-info
+  color color-info
+.text-success
+  color color-success
+.text-alert
+  color color-alert
+.text-danger
+  color color-danger
+
+.text-center
+  text-align center
+.text-left
+  text-align left
+.text-right
+  text-align right
+
+.letter-capitalize
+  float left
+  font-family Georgia
+  font-size 5em
+  line-height 55px
+  padding 2px 6px
+
+.font-allura
+  font-family Allura
+.font-anton
+  font-family Anton
+.font-banda
+  font-family Banda
+.font-bebasNeue
+  font-family BebasNeue
+.font-carme
+  font-family Carme
+.font-claire
+  font-family Claire
+.font-kaushan
+  font-family Kaushan
+.font-lobster
+  font-family Lobster
+.font-quicksand
+  font-family Quicksand
+.font-weston
+  font-family Weston

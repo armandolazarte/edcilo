@@ -1,0 +1,303 @@
+/*
+ * animation compatible con chrome
+ */
+animation()
+  -webkit-animation arguments
+  -moz-animation arguments
+  -ms-animation arguments
+  animation arguments
+
+/*
+ * Estilo para bloque
+ */
+block-alert(b_color)
+  background lighten(b_color, 50%)
+  border 1px solid b_color
+  border-radius 4px;
+  box-shadow 0 0 1px 1px rgba(b_color, .3);
+  color darken(b_color, 60%)
+  margin 0 0 margin-min
+  padding padding-regular
+  .close
+    background transparent
+    border none
+    color darken(b_color, 60%)
+    cursor pointer
+    float right
+    font-size 1.375em
+    font-weight bold
+    line-height 1
+    opacity .6
+    &:focus
+    &:hover
+      outline none
+      opacity .9
+
+change-style-alert(b_color)
+  background lighten(b_color, 50%)
+  border-color  b_color
+  box-shadow 0 0 1px 1px rgba(b_color, .3);
+  color darken(b_color, 60%)
+  .close
+    color darken(b_color, 60%)
+
+/*
+ * border-radius compatible con chrome y firefox
+ */
+border-radius()
+  -webkit-border-radius arguments
+  -moz-border-radius arguments
+  border-radius arguments
+
+/*
+ * box-shadow compatible con chrome y firefox
+ */
+box-shadow()
+  -webkit-box-shadow arguments
+  -moz-box-shadow arguments
+  box-shadow arguments
+
+/*
+ * Estilos base para un boton
+ */
+button-base()
+  border 1px solid transparent
+  border-radius 2px
+  cursor pointer
+  display inline-block
+  font-size 12px
+  font-style normal
+  font-weight bold
+  line-height 28px
+  min-width 30px
+  outline 0 none #fff
+  position relative
+  text-align center
+  text-decoration none
+  text-shadow 0 1px 0 rgba(0,0,0,0.0980)
+  text-transform none
+  transition all 250ms linear
+  vertical-align middle
+  visibility visible
+  white-space nowrap
+  z-index 1
+  &:active
+  &:focus
+  &:hover
+  &:visited
+    outline none
+    text-decoration none
+  i.fa
+    color color-text-clear
+
+/*
+ * estilos del boton 1
+ * b_color color de fondo del boton
+ * t_color color del texto
+ * m_size tamaño del margin
+ * p_size tamaño del padding
+ */
+button-1-style(b_color=grayClouds, t_color=#000, m_size=0, p_size=0 1em)
+  box-shadow 0 1px 0 0 rgba(darken(b_color, 90%), .047);
+  color t_color
+  gradientLinear b_color darken(b_color, 4%)
+  margin m_size
+  padding p_size
+  transition all 0
+  &:hover
+  &:focus
+    background lighten(b_color, 3%)
+    border-bottom-color darken(b_color, 25%)
+    box-shadow 0 -1px 0 darken(b_color, 25%) inset
+    color t_color
+  &:active
+    background darken(b_color, 10%)
+    border-top-color darken(b_color, 25%)
+    box-shadow 0 1px 0 darken(b_color, 25%) inset
+
+change-style-btn(b_color=grayClouds, t_color=#000)
+  box-shadow 0 1px 0 0 rgba(darken(b_color, 90%), .047);
+  color t_color
+  gradientLinear b_color darken(b_color, 4%)
+  &:hover
+  &:focus
+    background lighten(b_color, 3%)
+    border-bottom-color darken(b_color, 25%)
+    box-shadow 0 -1px 0 darken(b_color, 25%) inset
+    color t_color
+  &:active
+    background darken(b_color, 10%)
+    border-top-color darken(b_color, 25%)
+    box-shadow 0 1px 0 darken(b_color, 25%) inset
+
+/*
+ * estilos del boton 2
+ * b_color color de fondo del boton
+ * t_color color del texto
+ * m_size tamaño del margin
+ * p_size tamaño del padding
+ * radio tamaño del radio de los bordes
+ */
+button-2-style(b_color=#fff, t_color=#000, m_size=0, p_size=.5em 2em, radio=2px)
+  border 1px solid darken(b_color, 8%)
+  border-radius radio
+  color t_color
+  gradientLinear b_color darken(b_color, 4%)
+  margin m_size
+  padding p_size
+  &:focus
+    box-shadow 0 0 3px 0 b_color
+  &:hover
+  &:focus
+    border 1px solid darken(b_color, 20%)
+    color t_color
+    gradientLinear darken(b_color, 6%) darken(b_color, 10%)
+  &:active
+    box-shadow 0 1px 4px 0 darken(b_color, 40%) inset
+
+change-style-btn-solid(b_color=grayClouds, t_color=#000)
+  border-color darken(b_color, 8%)
+  color t_color
+  gradientLinear b_color darken(b_color, 4%)
+  &:focus
+    box-shadow 0 0 3px 0 b_color
+  &:hover
+  &:focus
+    border 1px solid darken(b_color, 20%)
+    color t_color
+    gradientLinear darken(b_color, 6%) darken(b_color, 10%)
+  &:active
+    box-shadow 0 1px 4px 0 darken(b_color, 40%) inset
+
+/*
+* estilos del boton 3
+* b_color color de fondo del boton
+* t_color color del texto
+* m_size tamaño del margin
+* p_size tamaño del padding
+* radio tamaño del radio de los bordes
+*/
+button-3-style(b_color=grayClouds, t_color=#000, m_size=0, p_size=0 1.5em, radio=0)
+  background-color b_color
+  border 1px solid darken(b_color, 10%)
+  border-radius radio
+  color t_color
+  margin m_size
+  padding p_size
+  &:hover
+  &:focus
+    background lighten(b_color, 20%)
+    color t_color
+  &:active
+    background darken(b_color, 6%)
+    box-shadow 0 1px 0 darken(b_color, 25%) inset
+
+change-style-btn-r(b_color=grayClouds, t_color=#000)
+  background-color b_color
+  border-color darken(b_color, 10%)
+  color t_color
+  &:hover
+  &:focus
+    background lighten(b_color, 20%)
+    color t_color
+  &:active
+    background darken(b_color, 6%)
+    box-shadow 0 1px 0 darken(b_color, 25%) inset
+
+/*
+* estilos del boton 4
+* b_color color de fondo del boton
+* t_color color del texto
+* m_size tamaño del margin
+* p_size tamaño del padding
+* radio tamaño del radio de los bordes
+*/
+button-4-style(b_color=grayClouds, t_color=#000, m_size=0, p_size=0 1em, radio=0)
+  background-color b_color
+  border 1px solid darken(b_color, 15%)
+  border-radius radio
+  color t_color
+  margin m_size
+  padding p_size
+  padding-left 38px
+  &:hover
+  &:focus
+    background lighten(b_color, 20%)
+    color t_color
+  &:active
+    background darken(b_color, 6%)
+    box-shadow 0 1px 0 darken(b_color, 25%) inset
+  :first-child
+    border-right 1px solid darken(b_color, 15%)
+    bottom 0
+    font-size 1.4em
+    left 0
+    line-height 32px
+    position absolute
+    text-align center
+    top 0
+    width 32px
+
+
+/*
+* estilos del boton 5
+* b_color color de fondo del boton
+* t_color color del texto
+* m_size tamaño del margin
+* p_size tamaño del padding
+* radio tamaño del radio de los bordes
+*/
+button-5-style(b_color=grayClouds, t_color=#000, m_size=0, p_size=.25em 1em, radio=3px)
+  background-color b_color
+  border 1px solid darken(b_color, 10%)
+  border-radius radio
+  color t_color
+  margin m_size
+  padding p_size
+  width 100%
+  &:hover
+  &:focus
+    background lighten(b_color, 20%)
+    color t_color
+  &:active
+    background darken(b_color, 6%)
+    box-shadow 0 1px 0 darken(b_color, 25%) inset
+
+change-style-btn-block(b_color=grayClouds, t_color=#000)
+  background-color b_color
+  border-color darken(b_color, 10%)
+  color t_color
+  &:hover
+  &:focus
+    background lighten(b_color, 20%)
+    color t_color
+  &:active
+    background darken(b_color, 6%)
+    box-shadow 0 1px 0 darken(b_color, 25%) inset
+
+
+/*
+ * Degradado lineal conpatible con diversas versiones de navegadores
+ */
+gradientLinear(color1=white, color2=darken(white, 2%), alineacion=top )
+  background-color color1 // Old browsers
+  background -moz-linear-gradient(alineacion, color1 0%, color2 100%) // FF3.6+
+  background -webkit-gradient(linear, left top, left bottom, color-stop(0%,color1), color-stop(100%,color2)) // Chrome,Safari4+
+  background -webkit-linear-gradient(alineacion, color1 0%, color2 100%) // Chrome10+,Safari5.1+
+  background -o-linear-gradient(alineacion, color1 0%, color2 100%) // Opera 11.10+
+  background -ms-linear-gradient(alineacion, color1 0%, color2 100%) // IE10+
+  background linear-gradient(alineacion, color1 0%, color2 100%) // W3C
+
+/*
+ * conpatibilidad de transition con chrome, firefox y opera
+ */
+transition()
+  -webkit-transition arguments
+  -moz-transition arguments
+  -o-transition arguments
+  transition arguments
+
+delisting()
+  margin 0
+  padding 0
+  list-style none

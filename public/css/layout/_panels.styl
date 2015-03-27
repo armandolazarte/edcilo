@@ -1,0 +1,64 @@
+.panel-o
+.panel-o-s
+  background color-clear
+  border 1px solid transparent
+  border-radius 2px
+  margin-bottom margin-regular
+  padding padding-regular
+  position relative
+
+  .head
+    border-bottom 1px solid darken(color-clear, 10%)
+    font-size 1.125em
+    line-height 1
+    margin-bottom margin-regular
+    padding-bottom padding-regular
+
+    h1
+    h2
+    h3
+    h4
+    h5
+    h6
+    p
+    .subtitle
+      font-size 1.125em
+      font-weight normal
+      line-height 1
+      margin 0
+    .subtitle
+      font-size .875em
+
+.panel-o-s
+  box-shadow 0 1px 4px 0 rgba(color-dark, .2)
+
+.notes
+  background alpha(greenEdc1, .4)
+  border-radius radius-min
+  margin-bottom margin-regular
+  padding 40px padding-min padding-min
+  position relative
+  width 100%
+  &:before
+    background alpha(greenEdc1, .9)
+    border-radius radius-min radius-min 0 0
+    color color-text-dark
+    content 'NOTA'
+    font-weight 600
+    left 0
+    padding padding-min
+    position absolute
+    text-transform uppercase
+    top 0
+    width 100%
+
+  &.b-left
+    padding padding-min padding-min padding-min 40px
+    &:before
+      border-radius radius-min 0 0 radius-min
+      color lighten(greenEdc1, 60%)
+      content '\f075'
+      font: normal normal normal 14px/1 FontAwesome;
+      height 100%
+      padding 8px
+      width 30px

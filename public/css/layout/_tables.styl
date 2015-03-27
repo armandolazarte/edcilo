@@ -1,0 +1,125 @@
+.table
+.table-striped
+.table-bordered
+.table-hover
+  background transparent
+  margin-bottom margin-regular
+  width 100%
+  td
+  th
+    padding padding-min
+  tr
+    &.active
+      background lighten(color-neutral, 60%)
+    &.info
+      background lighten(color-info, 60%)
+    &.success
+      background lighten(color-success, 60%)
+    &.alert
+      background lighten(color-alert, 60%)
+      border none
+      margin 0
+    &.danger
+      background lighten(color-danger, 60%)
+  td
+    border-top 1px solid color-line
+  thead
+    border-bottom 2px solid color-line
+  tfoot
+    border-top 2px solid color-line
+  .numeric
+    text-align right
+
+.table-striped
+  tbody
+    tr
+      &:nth-child(even)
+        background lighten(color-neutral, 50%)
+
+.table-bordered
+  td
+  th
+    border 1px solid color-line
+
+.table-hover
+  tbody
+    tr
+      transition background .15s linear
+      &:hover
+        background lighten(color-neutral, 50%)
+
+
+// tablas responsive
+
+@media only screen and (max-width: 720px)
+  .rt
+    border-bottom 1px solid color-line
+    display block
+    position relative
+
+    thead
+      background lighten(color-neutral, 50%)
+      border-bottom none
+      border-right 2px solid color-line
+      display block
+      float left
+      text-align left
+
+    tbody
+      display -webkit-box
+      overflow-x auto
+
+    th
+    tr
+    td
+      display block
+
+    th
+      border-top 1px solid color-line
+
+
+
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px)
+
+  .tr-column
+    border 1px solid color-line
+    display block
+
+    thead
+    tbody
+    th
+    td
+    tr
+      display block
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead
+      border-bottom none
+      tr
+        position absolute
+        top -9999px
+        left -9999px
+
+    tr
+      border-top: 1px solid color-line
+      &:first-child
+        border-top 0
+
+    td
+      /* Behave  like a "row" */
+      border none
+      position relative
+      padding-left 50%
+
+    td:before
+      font-weight bold
+      /* Now like a table header */
+      position absolute
+      /* Top/left values mimic padding */
+      top 6px
+      left 6px
+      width 45%
+      padding-right 10px
+      white-space nowrap
+
+      content attr(data-title)

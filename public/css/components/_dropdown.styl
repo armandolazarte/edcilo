@@ -1,0 +1,56 @@
+.open
+  position relative
+  .dropdown-menu
+    display block
+
+.dropdown-menu
+  background color-clear
+  border 1px solid color-line
+  border-radius 2px
+  box-shadow 0 1px 2px 1px rgba(color-dark, .1)
+  display none
+  float left
+  left 0
+  list-style none
+  margin 4px 0 0
+  min-width 160px
+  padding padding-tiny 0
+  position absolute
+  text-align left
+  top 100%
+  z-index 9999
+  li
+    a
+      clear both
+      color color-text-dark
+      display block
+      font-weight bold
+      padding padding-min padding-regular
+      white-space nowrap
+      &:hover
+        background rgba(color-principal, .3)
+        text-decoration none
+  .divider
+    background color-line
+    height 1px
+    margin margin-tiny 0
+
+.globe
+  border-radius 4px
+  margin-top 12px
+  &:before
+  &:after
+    border-color transparent transparent color-line transparent
+    border-style solid
+    border-width 10px
+    content ''
+    display block
+    left 14px
+    position absolute
+    top -20px
+    width 10px
+  &:after
+    border-bottom-color color-clear
+    border-width 8px
+    left 16px
+    top -16px

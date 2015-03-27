@@ -1,0 +1,132 @@
+.panel
+  background color-clear
+  border-radius 2px
+  margin-bottom margin-regular
+  position relative
+  .cover
+    background-size cover
+    background-position center
+    background-repeat no-repeat
+    bottom 0
+    border-radius 2px
+    height 100%
+    opacity .4
+    position absolute
+    left 0
+    right 0
+    top 0
+    width 100%
+    z-index 0
+  .overlay
+    border-radius 2px
+    bottom 0
+    height 100%
+    left 0
+    opacity .6
+    position absolute
+    right 0
+    top 0
+    width 100%
+    z-index 0
+  a
+    text-decoration none
+    &:hover
+      text-decoration none
+
+.panel-header
+  align-items center
+  background color-principal
+  background-position center
+  background-repeat no-repeat
+  background-size cover
+  border-radius 2px
+  display flex
+  flex-direction row
+  left 0
+  padding padding-min
+  right 0
+  top 0
+  z-index 0
+  .image
+    height auto
+    margin 0 10px 0 0
+    max-height 100px
+    max-width 100px
+    width 25%
+    img
+      border-radius 50%
+      height 100%
+      width 100%
+  .title
+    color color-text-clear
+    font-size 22px
+    line-height 1
+    margin 0
+    text-shadow 0 0 6px color-text-dark
+    a
+      color color-text-clear
+      display block
+      text-decoration none
+    h1, h2, h3, h4, h5, h6, p
+      margin 0
+      font-size 1em
+    span
+      font-size .65em
+
+.panel-body
+  border-radius 2px
+  margin-bottom margin-regular
+  padding padding-regular
+  position relative
+  .image
+    display block
+    margin 0 0 margin-regular
+    text-align center
+    img
+      border-radius 50%
+      height auto
+      width 42%
+
+.panel-list
+  background color-clear
+  border-radius 2px
+  ul
+    display flex
+    flex-direction column
+    list-style none
+    margin 0
+    padding 0
+    li
+      border-top 1px solid darken(color-clear, 10%)
+      color color-text-dark
+      display flex
+      justify-content space-between
+      padding padding-min padding-regular
+      text-decoration none
+      &:hover
+        background darken(color-clear, 2%)
+      &:first-child
+        border-top none
+      i
+        color color-neutral
+        text-align center
+        width 20px
+
+.panel-footer
+  display flex
+  div
+    background color-principal
+    color color-text-clear
+    display flex
+    flex 1
+    flex-direction column
+    padding padding-regular
+    text-align center
+    &:nth-child(even)
+      background lighten(color-principal, 30%)
+    &:first-child
+      border-radius 2px 0 0 2px
+    &:last-child
+      border-radius 0 2px 2px 0
+    span
+      padding padding-regular 0 0

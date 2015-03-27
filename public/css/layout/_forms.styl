@@ -1,0 +1,157 @@
+.form
+.form-horizontal
+  button
+  input
+    &[type="submit"]
+    &[type="reset"]
+    &[type="button"]
+      button-base()
+
+    &[type="submit"]
+      button-1-style(color-success, color-text-clear)
+
+    &[type="reset"]
+      button-1-style(color-danger, color-text-clear)
+
+    &[type="button"]
+      button-1-style(color-info, color-text-clear)
+
+    &[type="text"]
+    &[type="email"]
+    &[type="number"]
+    &[type="password"]
+    &[type="search"]
+    &[type="tel"]
+    &[type="url"]
+      border 1px solid color-line-clear
+      border-radius 2px
+      padding padding-min padding-min
+      line-height 1
+      transition border .06s linear, box-shadow .06s linear
+      &:focus
+        border-color: darken(color-line-clear, 6%);
+        box-shadow 0 0 4px 0 rgba(color-dark, .15) inset
+        outline none
+
+    &[type="number"]
+    &[type="tel"]
+      text-align right
+
+    &[type="file"]
+      line-height 1
+
+    &[data-validation="required"]
+      border-color darken(color-line-clear, 20%)
+
+    &[data-validation="success"]
+      border-color greenEdc1
+
+    &[data-validation="error"]
+      border-color redEdc1
+
+  textarea
+    resize vertical
+
+  select
+  textarea
+    border 1px solid color-line-clear
+    border-radius 2px
+    box-shadow none
+    padding padding-min padding-min
+    line-height 1
+    transition border .06s linear, box-shadow .06s linear
+    &:focus
+      border-color: darken(color-line-clear, 6%);
+      box-shadow 0 0 4px 0 rgba(color-dark, .15) inset
+      outline none
+
+  label
+    font-weight 600
+
+
+  .message
+    text-align center
+    font-size 12px
+    span
+      display block
+      margin-bottom margin-regular
+      margin-top -1 * margin-regular
+    .info
+      color color-info
+    .danger
+      color color-danger
+
+
+  .row
+    align-items center
+    display flex
+
+    label
+      flex 1
+      padding-right padding-regular
+      text-align right
+
+    select
+    textarea
+    [type="text"]
+    [type="email"]
+    [type="number"]
+    [type="password"]
+    [type="search"]
+    [type="tel"]
+    [type="url"]
+    [type="file"]
+      flex 3
+
+    [type="submit"]
+    [type="reset"]
+      justify-content space-around
+
+
+  .row-buttons
+    display flex
+    justify-content space-around
+
+
+
+input
+  &[type="radio"]
+  &[type="checkbox"]
+    display none
+
+label:before
+  color color-line
+  display inline-block
+  font-family 'FontAwesome'
+  font-size 18px
+  font-weight normal
+  line-height 1.5
+  width 1.25em
+
+input[type="radio"] + label:before
+  content "\f10c" /* circle-blank */
+
+input[type="radio"]:checked + label:before
+  content "\f05d" /* circle */
+
+input[type="checkbox"] + label:before
+  content "\f096" /* check-empty */
+
+input[type="checkbox"]:checked + label:before
+  content "\f046" /* check */
+
+
+
+
+/*
+color
+date
+datetime
+datetime-local
+file
+image  // usar imagen como boton submit
+month
+range
+time
+week
+*/

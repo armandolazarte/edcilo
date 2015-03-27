@@ -1,0 +1,201 @@
+header
+  align-items center
+  display flex
+  padding 0 padding-regular
+  z-index 9
+  a
+    display inline-block
+    outline none
+  figure
+    margin 0
+    flex 1
+    padding-right 0.5em
+    img
+      height auto
+      max-width 100px
+      width 100%
+  nav
+    flex 3
+    ul
+      justify-content center
+  aside
+    align-items center
+    display flex
+    flex 1
+    justify-content flex-end
+    a
+      color color-text-dark
+    div
+      text-align center
+      img
+        border-radius 50%
+        box-shadow 0 0 3px 0 rgba(color-dark, .2)
+        height auto
+        max-width 40px
+        width 100%
+    .dropdown-menu
+      left auto
+      right 0
+    .globe
+      &:before
+      &:after
+        left auto
+        right 20px
+      &:after
+          right 22px
+    .menu-user
+      button
+        height 30px
+        line-height 1
+        margin 0 .375em
+        padding 0
+        width 30px
+        &:before
+          content '\f0c9'
+          font: normal normal normal 14px/1 FontAwesome;
+    .notifications
+      button
+        background transparent
+        border none
+        height 30px
+        margin 0 1em 0 .5em
+        position relative
+        outline none
+        width 30px
+        &:before
+          content "\f0a2"
+          font: normal normal normal 14px/1 FontAwesome;
+        .badge
+          background color-danger
+          border-radius 50%
+          color color-text-clear
+          font-size 10px
+          height 16px
+          line-height 1.5
+          padding 0
+          position absolute
+          right -3px
+          text-align center
+          top -3px
+          width 16px
+  .menu-back
+    display none
+    background color-neutral
+    height 100%
+    margin-left -43px
+    opacity .6
+    position fixed
+    top 0
+    width 100%
+    z-index 9998
+  .trigger-menu-smartphone
+    display none
+    height 30px
+    line-height 1
+    margin 0 .5em 0 0
+    padding 0
+    width 30px
+    &:before
+      content '\f00a'
+      font: normal normal normal 14px/1 FontAwesome;
+
+  @media all and (max-width: 900px)
+    flex-flow row wrap
+    .nav-smartphone
+      background color-clear
+      bottom 0
+      height 100%
+      left -520px
+      overflow-x hidden
+      overflow-y auto
+      position fixed
+      top 0
+      width 520px
+      z-index 9999
+      ul
+        li
+          border-bottom 1px solid lighten( color-line-clear, 80% )
+          display block
+          margin 0
+          &:first-child
+            background rgba(color-principal, .4)
+            a
+            span
+              color color-text-clear
+              margin 0
+              &:before
+                color color-text-clear
+                content '\f015'
+                font: normal normal normal 14px/1 FontAwesome
+                font-weight normal
+                margin 2px 10px 0
+                opacity 1
+          a
+          span
+            padding 17px 0 17px 10px
+            vertical-align middle
+    figure
+      order 2
+      flex 1
+    nav
+      order 1
+    aside
+      flex 2
+      order 3
+    .trigger-menu-smartphone
+      display block
+
+  @media all and (max-width: 600px)
+    .nav-smartphone
+      left -340px
+      width 340px
+
+  @media all and (max-width: 400px)
+    aside
+      font-size font-size-min
+      text-align right
+      .dropdown-menu
+        right 2px
+      .globe
+        &:before
+        &:after
+          right 13px
+        &:after
+          right 15px
+      .menu-user
+      .notifications
+        button
+          height 28px
+          width 28px
+          .badge
+            font-size 9px
+            height 14px
+            line-height 1.7
+            right -1px
+            top -1px
+            width 14px
+
+    .nav-smartphone
+      left -255px
+      width 255px
+
+  @media all and (max-width: 340px)
+    aside
+      .dropdown-menu
+        right -4px
+
+  @media all and (max-width: 300px)
+    aside
+      .dropdown-menu
+        right -6px
+      .globe
+        &:before
+        &:after
+          right 11px
+        &:after
+          right 13px
+
+.content_header
+  background color-clear
+  //box-shadow 0 0 4px 0 rgba(color-dark, .2)
+
