@@ -29,7 +29,7 @@ return [
 	|
 	*/
 
-	'model' => 'App\Models\user\User',
+	'model' => 'App\Models\User\user\User',
 
 	/*
 	|--------------------------------------------------------------------------

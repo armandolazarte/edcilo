@@ -1,4 +1,4 @@
-<?php namespace App\Models\userLang;
+<?php namespace App\Models\User\userLang;
 
 use App\Models\base\BaseRepo;
 

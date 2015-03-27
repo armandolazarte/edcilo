@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\Controller;
 
-use App\Models\userCountry\UserCountryRepo;
+use App\Models\User\userCountry\UserCountryRepo;
 
 use App\Http\Requests\User\userCountry\CreateCountryRequest;
 use App\Http\Requests\User\userCountry\UpdateCountryRequest;

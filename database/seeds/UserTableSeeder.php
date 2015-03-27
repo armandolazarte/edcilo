@@ -37,6 +37,12 @@ class UserTableSeeder extends Seeder {
                 'biography'         => $faker->paragraph(rand(2,5)),
             ]);
 
+            \DB::table('user_covers')->insert([
+                'user_id'           => $id,
+                'photo'             => 'images/users/photo.jpg',
+                'cover'             => 'images/users/cover.png',
+            ]);
+
         }
     }
 

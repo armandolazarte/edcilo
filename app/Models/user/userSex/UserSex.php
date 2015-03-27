@@ -1,4 +1,4 @@
-<?php namespace App\Models\userSex;
+<?php namespace App\Models\User\userSex;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -20,7 +20,7 @@ class UserSex extends Model {
 	*/
     public function profiles()
     {
-        return $this->hasMany('App\Models\userProfile\UserProfile');
+        return $this->hasMany('App\Models\User\userProfile\UserProfile');
     }
 
 }

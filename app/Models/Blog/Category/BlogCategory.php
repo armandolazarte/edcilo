@@ -1,15 +1,14 @@
-<?php namespace App\Models\userCountry;
+<?php namespace App\Models\Blog\Category;
 
 use Illuminate\Database\Eloquent\Model;
 
-class UserCountry extends Model {
-
-    protected $table = 'user_countries';
+class BlogCategory extends Model {
 
     protected $fillable = [
         'name',
-        'abbr',
-        'icon',
+        'description',
+        'position',
+        'slug',
     ];
 
 
@@ -18,9 +17,10 @@ class UserCountry extends Model {
 	| RELACIONES DEL MODELO
 	|--------------------------------------------------------------------------
 	*/
-    public function profiles()
+
+    public function subcategories()
     {
-        return $this->hasMany('App\Models\userProfile\userProfile', 'user_country_id');
+        return $this->hasMany('App\Models\Blog\Subcategory\BlogSubcategory');
     }
 
 }

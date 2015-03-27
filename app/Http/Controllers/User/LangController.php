@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\Controller;
 
-use App\Models\userLang\UserLangRepo;
+use App\Models\User\userLang\UserLangRepo;
 
 use App\Http\Requests\User\userLang\CreateLangRequest;
 use App\Http\Requests\User\userLang\UpdateLangRequest;

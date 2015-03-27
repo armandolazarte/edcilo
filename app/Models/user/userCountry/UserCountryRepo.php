@@ -1,4 +1,4 @@
-<?php namespace App\Models\userCountry;
+<?php namespace App\Models\User\userCountry;
 
 use App\Models\base\BaseRepo;
 

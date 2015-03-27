@@ -16,6 +16,9 @@ class DatabaseSeeder extends Seeder {
 	{
 		Model::unguard();
 
+        /*
+         * USERS
+         */
         $this->call('SexTableSeeder');
         $this->call('CountryTableSeeder');
         $this->call('LangsTableSeeder');
@@ -25,6 +28,14 @@ class DatabaseSeeder extends Seeder {
         $this->call('UserTableSeeder');
 
         $this->call('CoverTableSeeder');
+
+
+        /*
+         * BLOGS
+         */
+        $this->call('BlogCategoryTableSeeder');
+        $this->call('BlogSubcategoryTableSeeder');
+        $this->call('BlogPostTableSeeder');
 	}
 
 }

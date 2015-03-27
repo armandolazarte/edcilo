@@ -1,4 +1,4 @@
-<?php namespace App\Models\userSocialNetwork;
+<?php namespace App\Models\User\userSocialNetwork;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -21,7 +21,7 @@ class UserSocialNetwork extends Model {
 	*/
     public function users()
     {
-        return $this->belongsToMany('App\Models\user\User', 'user_user_social_network', 'user_id', 'user_social_network_id')->withPivot('username');
+        return $this->belongsToMany('App\Models\User\user\User', 'user_user_social_network', 'user_id', 'user_social_network_id')->withPivot('username');
     }
 
 }

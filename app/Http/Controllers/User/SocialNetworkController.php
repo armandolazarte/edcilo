@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\Controller;
 
-use App\Models\userSocialNetwork\UserSocialNetworkRepo;
+use App\Models\User\userSocialNetwork\UserSocialNetworkRepo;
 
 use App\Http\Requests\User\userSocialNetwork\CreateSocialNetworkRequest;
 use App\Http\Requests\User\userSocialNetwork\UpdateSocialNetworkRequest;

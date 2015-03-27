@@ -1,15 +1,15 @@
-<?php namespace App\Models\userLang;
+<?php namespace App\Models\User\userCountry;
 
 use Illuminate\Database\Eloquent\Model;
 
-class UserLang extends Model {
+class UserCountry extends Model {
 
-    protected $table = 'user_langs';
+    protected $table = 'user_countries';
 
     protected $fillable = [
         'name',
-        'native',
-        'abbr'
+        'abbr',
+        'icon',
     ];
 
 
@@ -18,5 +18,9 @@ class UserLang extends Model {
 	| RELACIONES DEL MODELO
 	|--------------------------------------------------------------------------
 	*/
+    public function profiles()
+    {
+        return $this->hasMany('App\Models\User\userProfile\userProfile', 'user_country_id');
+    }
 
 }

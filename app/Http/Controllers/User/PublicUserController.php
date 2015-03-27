@@ -2,8 +2,8 @@
 
 use App\Http\Controllers\Controller;
 
-use App\Models\user\UserRepo;
-use App\Models\UserCover\UserCoverRepo;
+use App\Models\User\user\UserRepo;
+use App\Models\User\userCover\UserCoverRepo;
 
 use App\Http\Requests\user\user\CreatePublicUserRequest;
 use App\Http\Requests\User\user\UpdatePublicUserRequest;

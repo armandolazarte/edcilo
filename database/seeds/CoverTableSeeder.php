@@ -2,23 +2,20 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
-use Illuminate\Support\Facades\Hash;
 use Faker\Factory as Faker;
 
 class CoverTableSeeder extends Seeder {
 
     public function run()
     {
-        for($i = 1; $i < 52; $i++)
-        {
+        $faker = Faker::create();
 
-            \DB::table('user_covers')->insertGetId([
-                'user_id'   => $i,
-                'photo'     => 'images/users/photo.jpg',
-                'cover'     => 'images/users/cover.png',
-            ]);
-
-        }
+        \DB::table('blog_categories')->insertGetId([
+            'name'          => 'PHP',
+            'description'   => 'PHP es un lenguaje de programación de uso general de código del lado del servidor originalmente diseñado para el desarrollo web de contenido dinámico.',
+            'position'      => $faker->numberBetween(0, 9),
+            'slug'          => Str::slug('PHP')
+        ]);
     }
 
 }

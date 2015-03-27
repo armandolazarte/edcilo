@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\Controller;
 
-use App\Models\userSex\UserSexRepo;
+use App\Models\User\userSex\UserSexRepo;
 
 use App\Http\Requests\User\userSex\CreateSexRequest;
 use App\Http\Requests\User\userSex\UpdateSexRequest;

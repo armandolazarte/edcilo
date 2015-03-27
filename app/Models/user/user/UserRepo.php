@@ -1,4 +1,4 @@
-<?php namespace App\Models\user;
+<?php namespace App\Models\User\user;
 
 use App\Models\base\BaseRepo;
 

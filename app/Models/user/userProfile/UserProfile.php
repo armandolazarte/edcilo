@@ -1,4 +1,4 @@
-<?php namespace App\Models\userProfile;
+<?php namespace App\Models\User\userProfile;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -40,17 +40,17 @@ class UserProfile extends Model {
 	*/
     public function user()
     {
-        return $this->belongsTo('App\Models\user\User');
+        return $this->belongsTo('App\Models\User\user\User');
     }
 
     public function sex()
     {
-        return $this->belongsTo('App\Models\userSex\UserSex', 'user_sex_id');
+        return $this->belongsTo('App\Models\User\userSex\UserSex', 'user_sex_id');
     }
 
     public function country()
     {
-        return $this->belongsTo('App\Models\userCountry\UserCountry', 'user_country_id');
+        return $this->belongsTo('App\Models\User\userCountry\UserCountry', 'user_country_id');
     }
 
 }

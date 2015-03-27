@@ -2,9 +2,9 @@
 
 use App\Http\Controllers\Controller;
 
-use App\Models\userProfile\UserProfileRepo;
-use App\Models\userCountry\UserCountryRepo;
-use App\Models\userSex\UserSexRepo;
+use App\Models\User\userProfile\UserProfileRepo;
+use App\Models\User\userCountry\UserCountryRepo;
+use App\Models\User\userSex\UserSexRepo;
 
 use App\Http\Requests\User\userProfile\CreateProfileRequest;
 use App\Http\Requests\User\userProfile\UpdateProfileRequest;

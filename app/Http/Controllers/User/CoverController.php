@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\Controller;
 
-use App\Models\UserCover\UserCoverRepo;
+use App\Models\User\userCover\UserCoverRepo;
 
 use App\Http\Requests\User\userCover\UpdateCoverRequest;
 

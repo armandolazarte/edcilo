@@ -1,4 +1,4 @@
-<?php namespace App\Models\UserCover;
+<?php namespace App\Models\User\userCover;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -39,7 +39,7 @@ class UserCover extends Model {
 	*/
     public function user()
     {
-        return $this->belongsTo('App\Models\user\User');
+        return $this->belongsTo('App\Models\User\user\User');
     }
 
 }

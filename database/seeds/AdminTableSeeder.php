@@ -30,6 +30,12 @@ class AdminTableSeeder extends Seeder {
             'v_langs'           => 1,
             'biography'         => 'Ing en sistemas computacionales, graduado del Instituto Tecnológico de Tapachula.',
         ]);
+
+        \DB::table('user_covers')->insert([
+            'user_id'           => 1,
+            'photo'             => 'images/users/photo.jpg',
+            'cover'             => 'images/users/cover.png',
+        ]);
     }
 
 }

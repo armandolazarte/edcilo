@@ -1,4 +1,4 @@
-<?php namespace App\Models\user;
+<?php namespace App\Models\User\user;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
@@ -74,18 +74,18 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 	*/
     public function profile()
     {
-        return $this->hasOne('App\Models\userProfile\UserProfile');
+        return $this->hasOne('App\Models\User\userProfile\UserProfile');
     }
 
     public function cover()
     {
-        return $this->hasOne('App\Models\userCover\UserCover');
+        return $this->hasOne('App\Models\User\userCover\UserCover');
     }
 
 
     public function socials()
     {
-        return $this->belongsToMany('App\Models\userSocialNetwork\UserSocialNetwork', 'user_user_social_network', 'user_id', 'user_social_network_id')->withPivot('username');
+        return $this->belongsToMany('App\Models\User\userSocialNetwork\UserSocialNetwork', 'user_user_social_network', 'user_id', 'user_social_network_id')->withPivot('username');
     }
 
 }
