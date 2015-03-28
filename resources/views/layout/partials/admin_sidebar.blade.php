@@ -1,5 +1,21 @@
 <dl class="accordion">
-    <dt>Administrar</dt>
+    <dt>Administrar Blog</dt>
+    <dd class="panel" style="display: none;">
+
+        <div class="panel-list">
+            <ul>
+                <li>
+                    <a href="{{ route('admin.blog.category.index') }}">
+                        <i class="fa fa-list"></i>
+                        Adm. categorías
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </dd>
+
+    <dt>Administrar Usuarios</dt>
     <dd class="panel" style="display: none;">
 
         <div class="panel-list">

@@ -28,6 +28,9 @@ class CreateBlogPostsTable extends Migration {
             $table->string('url_demo');
             $table->string('url_source');
             $table->string('url_repository');
+
+            $table->boolean('comments_active')->default(1);
+
             $table->string('slug');
 
             $table->longText('content');

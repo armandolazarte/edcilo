@@ -11,6 +11,16 @@ class BlogCategory extends Model {
         'slug',
     ];
 
+    /*
+    |--------------------------------------------------------------------------
+    |  GETTERS
+    |--------------------------------------------------------------------------
+    */
+    public function getShortDescriptionAttribute()
+    {
+        return ( strlen($this->description) > 95 ) ? substr( $this->description, 0, 92 ) . '...' : $this->description;
+    }
+
 
     /*
 	|--------------------------------------------------------------------------

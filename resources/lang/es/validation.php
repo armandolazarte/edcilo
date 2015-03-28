@@ -127,6 +127,9 @@ return array(
         'v_bday'            => 'Fecha de nacimiento visible',
         'v_sex'             => 'Sexo visible',
         'v_country'         => 'País visible',
+
+        'description'       => 'Descripción',
+        'position'          => 'Posición'
     ),
 
 );

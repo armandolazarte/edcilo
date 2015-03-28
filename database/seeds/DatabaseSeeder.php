@@ -36,6 +36,7 @@ class DatabaseSeeder extends Seeder {
         $this->call('BlogCategoryTableSeeder');
         $this->call('BlogSubcategoryTableSeeder');
         $this->call('BlogPostTableSeeder');
+        $this->call('BlogCommentTableSeeder');
 	}
 
 }

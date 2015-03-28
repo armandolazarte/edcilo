@@ -24,6 +24,7 @@ class BlogPostTableSeeder extends Seeder {
                 'url_source'            => $faker->randomElement(['', $faker->url]),
                 'url_repository'        => $faker->randomElement(['', $faker->url]),
                 'content'               => $faker->text(1200),
+                'comments_active'       => $faker->randomElement([1, 0, 1]),
                 'slug'                  => Str::slug($title),
             ]);
         }

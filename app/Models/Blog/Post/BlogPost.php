@@ -15,6 +15,7 @@ class BlogPost extends Model {
         'url_repository',
         'content',
         'slug',
+        'comments_active'
     ];
 
 
