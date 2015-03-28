@@ -6,7 +6,7 @@ class BlogSubcategoryRepo extends BaseRepo {
 
     public function getModel()
     {
-        return new BlogSubcategoryRepo();
+        return new BlogSubcategory();
     }
 
     public function newBlogSubcategory()

@@ -55,12 +55,6 @@ Route::group(['middleware' => 'auth', 'namespace' => 'User'], function () {
 });
 
 
-/*
- * Rutas publicas
- */
-require( __DIR__ . '/Routes/Public/User.php' );
-
-
 
 /*
  * Rutas del blog
@@ -71,4 +65,14 @@ Route::group(['middleware' => 'auth', 'namespace' => 'Blog'], function () {
     require( __DIR__ . '/Routes/Blog/Category.php' );
 
 
+    require( __DIR__ . '/Routes/Blog/Subcategory.php' );
+
+
 });
+
+
+
+/*
+ * Rutas publicas
+ */
+require( __DIR__ . '/Routes/Public/User.php' );

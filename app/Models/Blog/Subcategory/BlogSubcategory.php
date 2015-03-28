@@ -12,6 +12,16 @@ class BlogSubcategory extends Model {
         'slug',
     ];
 
+    /*
+    |--------------------------------------------------------------------------
+    |  GETTERS
+    |--------------------------------------------------------------------------
+    */
+    public function getShortDescriptionAttribute()
+    {
+        return ( strlen($this->description) > 95 ) ? substr( $this->description, 0, 92 ) . '...' : $this->description;
+    }
+
 
     /*
 	|--------------------------------------------------------------------------
@@ -20,7 +30,7 @@ class BlogSubcategory extends Model {
 	*/
     public function category()
     {
-        return $this->belongsTo('App\Models\Blog\Category\BlogCategory');
+        return $this->belongsTo('App\Models\Blog\Category\BlogCategory', 'blog_category_id');
     }
 
 

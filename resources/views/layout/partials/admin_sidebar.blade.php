@@ -10,6 +10,12 @@
                         Adm. categorías
                     </a>
                 </li>
+                <li>
+                    <a href="{{ route('admin.blog.subcategory.index') }}">
+                        <i class="fa fa-list"></i>
+                        Adm. Subcategorías
+                    </a>
+                </li>
             </ul>
         </div>
 
